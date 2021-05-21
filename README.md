@@ -34,6 +34,10 @@ will show you how we sort 9 4 8 7 with radix sort
 
 Now you finish your radix sort algorithm and you want to test it ?
 
+First, ```vim radix_sort_test.sh``` and set the variable ```ROOT``` as the path of the root of your repository
+
+Then
+
 ```bash radix_sort_test.sh <numbers>```
 
 For example
@@ -44,6 +48,11 @@ will show you how your push_swap sort these numbers, and those numbers will be s
 
 ![base2](https://user-images.githubusercontent.com/70040774/119062455-2a141b00-b9d7-11eb-9c0e-778e50afba2c.png)
 
+### Clean
+
+```bash clean.sh```
+
+will clean everything
 
 ### Contact : 
 
