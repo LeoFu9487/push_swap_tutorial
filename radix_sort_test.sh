@@ -1,4 +1,4 @@
-ROOT=../42_new
+ROOT=..
 
 RED="\e[31m"
 GREEN="\e[32m"
