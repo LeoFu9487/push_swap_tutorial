@@ -1,4 +1,4 @@
-ROOT=..
+ROOT=../42_new
 
 RED="\e[31m"
 GREEN="\e[32m"
@@ -27,14 +27,14 @@ then
 	exit 1
 fi
 
-echo "" > ./trace_radix/test_case.txt
+echo "" > ./trace/test_case.txt
 
 for i in $@
 do
-echo $i >> ./trace_radix/test_case.txt
+echo $i >> ./trace/test_case.txt
 done
 
-($ROOT/push_swap $(cat ./trace_radix/test_case.txt) > ./trace_radix/output.txt) & pid=$!
+($ROOT/push_swap $(cat ./trace/test_case.txt) > ./trace/output.txt) & pid=$!
 (sleep $TIME_LIMIT && kill -HUP $pid) 2>/dev/null & watcher=$!
 if wait $pid 2>/dev/null; then
 	TLEFLAG=0
@@ -44,7 +44,7 @@ else
 fi
 
 
-cat ./trace_radix/output.txt > radix_instructions
-./files/checker_radix $(cat ./trace_radix/test_case.txt)
+cat ./trace/output.txt > radix_instructions
+./files/checker_radix $(cat ./trace/test_case.txt)
 rm -rf radix_instructions
-echo "test_case and output are in trace_radix"
+echo "test_case and output are in trace"
