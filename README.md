@@ -10,9 +10,9 @@ https://medium.com/台灣人-ecole42/cursus-push-swap-582d5108c537
 
 English version : 
 
-To be continued ...
+https://leofu890806.medium.com/push-swap-tutorial-fa746e6aba1e
 
-Then you can run the following command to see how this algorithm works exactly
+Then you can run the following command to see how this algorithm works
 
 ```bash radix_sort_solution.sh <numbers> ```
 
