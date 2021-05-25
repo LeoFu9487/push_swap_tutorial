@@ -16,6 +16,8 @@ Then you can run the following command to see how this algorithm works
 
 ```bash radix_sort_solution.sh <numbers> ```
 
+(Reminder : duplicate numbers will cause an error.)
+
 For example
 
 ```bash radix_sort_solution.sh 9 4 8 7 ```
@@ -38,6 +40,8 @@ First, ```vim radix_sort_test.sh``` and set the variable ```ROOT``` as the path 
 Then
 
 ```bash radix_sort_test.sh <numbers>```
+
+(Reminder : duplicate numbers will cause an error.)
 
 For example
 
